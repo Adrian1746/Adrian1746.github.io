@@ -161,38 +161,38 @@ const missions = [
     color: 'mercury'
   },
   {
-    id: 'deep-impact', name: 'Deep Impact (Impactor)', world: 'Cometa 9P', mark: 'DI',
-    officialName: '',
-    launch: '',
-    end: '',
-    purpose: '',
-    endReason: '',
-    finalPlace: '',
-    nasaUrl: '',
-    story: '',
-    discoveries: '',
-    image: '',
+    id: 'deep-impact', name: 'Cometa 9P/Tempel 1', world: 'Cometa 9P', mark: 'DI',
+    officialName: '9P/Tempel 1 (es un cometa periódico del sistema solar descubierto por el astrónomo Ernst Wilhelm Tempel en 1867, y que sirvió como el "dispositivo" o cuerpo natural estudiado de forma directa por misiones espaciales humanas).',
+    launch: 'Lanzada el 12 de enero de 2005 a bordo de un cohete Delta II (el impacto controlado ocurrió el 4 de julio de 2005).',
+    end: 'No aplica como tal para el cometa, ya que es un cuerpo celeste natural que continúa su órbita alrededor del Sol. Sin embargo, las naves que lo estudiaron concluyeron sus misiones: Deep Impact finalizó en 2013 tras perder contacto, y Stardust finalizó en 2011 tras agotar su combustible después de sobrevolar el cometa.',
+    purpose: 'Estudiar la composición interna, la estructura y la morfología del núcleo de un cometa por primera vez en la historia mediante la colisión controlada de un proyectil de cobre (de unos 370 kg) lanzado por la misión Deep Impact.',
+    endReason: 'Al tratarse de un cometa natural, no cesa su actividad, sino que sigue orbitando el Sol periódicamente (completa una vuelta cada ~5.5 años). Las naves artificiales que lo visitaron terminaron sus operaciones por el cumplimiento exitoso de sus objetivos científicos y el posterior agotamiento de combustible y sistemas de comunicación.',
+    finalPlace: 'El núcleo del cometa 9P/Tempel 1 sigue activo y viajando por el espacio en su órbita elíptica alrededor del Sol',
+    nasaUrl: 'https://science-nasa-gov.translate.goog/solar-system/comets/9p-tempel-1/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc',
+    story: '¿Quieres ver qué pasa si le tiras una bala de cobre gigante a un viajero congelado? Eso hicieron los científicos en 2005 con el Deep Impact, un impactor que se separó de su nave madre para chocar contra el Cometa 9P/Tempel 1. La idea era hacer un cráter enorme para echarle un ojo al polvo viejísimo guardado en el núcleo de este cuerpo celeste desde el origen del sistema solar estos son bolas de nieve sucia volando por el espacio y como podrán imaginarse el choque fue un espectáculo. El explorador se volvió polvo cósmico al instante, volviéndose parte del cometa para siempre.',
+    discoveries: 'Completó el primer mapeo global de Mercurio, confirmando la presencia sorprendente de depósitos de hielo de agua y compuestos orgánicos en los cráteres permanentemente sombreados de sus polos. También descubrió evidencias de antiguo vulcanismo explosivo y reveló que el planeta se ha contraído significativamente al enfriarse.',
+    image: 'https://translate.google.com/website?sl=en&tl=es&hl=es&client=srp&u=https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/07/PIA02137_modest.jpg?w%3D900%26h%3D900%26fit%3Dcrop%26crop%3Dfaces%252Cfocalpoint',
     color: 'comet'
   },
   {
     id: 'galileo', name: 'Galileo (Orbiter)', world: 'Júpiter', mark: 'G',
-    officialName: '',
-    launch: '',
-    end: '',
-    purpose: '',
-    endReason: '',
-    finalPlace: '',
-    nasaUrl: '',
-    story: '',
-    discoveries: '',
-    image: '',
+    officialName: 'Galileo (compuesto por el orbitador principal y una sonda atmosférica de descenso).',
+    launch: '18 de octubre de 1989 (a las 12:53:40 UTC) desde el Complejo de Lanzamiento 39B en el Centro Espacial Kennedy, Florida, a bordo del transbordador espacial Atlantis (durante la misión STS-34) y propulsada posteriormente hacia Júpiter mediante una etapa superior inercial (IUS).',
+    end: '21 de septiembre de 2003. Tras más de 14 años en el espacio y para evitar una posible contaminación biológica futura de la luna Europa (la cual podría albergar un océano subterráneo apto para la vida), la NASA dirigió intencionalmente a la sonda para que se desintegrara en la atmósfera de Júpiter.',
+    purpose: 'Estudiar de forma exhaustiva y a largo plazo el sistema joviano (el planeta Júpiter, su intensa magnetosfera, sus anillos y sus lunas principales).',
+    endReason: 'Fin de misión programado y controlado por la NASA. Hacia el año 2003, la nave ya había agotado prácticamente todo su combustible de control de actitud y sus instrumentos científicos sufrían una grave degradación debido a los intensos cinturones de radiación de Júpiter. Para garantizar que la sonda fuera destruida de forma segura sin riesgo de estrellarse accidentalmente contra la luna Europa en misiones futuras, se ejecutó una inmolación controlada en la atmósfera joviana.',
+    finalPlace: 'Se desintegró y fundió en las capas profundas de la densa atmósfera de Júpiter el 21 de septiembre de 2003. Sus restos vaporizados y microscópicos pasaron a formar parte del propio gigante gaseoso.',
+    nasaUrl: 'https://science.nasa.gov/mission/galileo/',
+    story: 'Una reina magnifica la nave Galileo, que llegó en 1995 a echar chisme en los dominios del gigantesco planeta Júpiter y sus lunas que por si no lo sabían tiene 95 lunas pero podrían llegar a ser más en un futuro lejano esta reina descubrió que debajo de la costra de hielo de la luna Europa existen océanos inmensos donde perfectamente podría haber vida. Para que lo notes, este colosal cuerpo celeste es tan monstruosamente grande que la Tierra cabría mil veces adentro pero trágicamente hacia el 2003, para evitar que la nave cayera por accidente en las lunas, la mandaron a disolverse dentro de las coloridas nubes del planeta como un rayo brillante.',
+    discoveries: 'Descubrió la existencia de vastos océanos líquidos subterráneos bajo las cortezas heladas de las lunas jovianas (especialmente Europa), fotografió erupciones volcánicas activas en la luna Ío impulsadas por fuerzas de marea, y midió directamente la dinámica extrema de la atmósfera y la intensa radiación de Júpiter.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT53vybmh-IcPDrwBIW8XmB8XQHt3maWba7hBDK4xTiJQ&s=10',
     color: 'jupiter'
   }
 ];
 
 // Copy and placeholders not found in the database can be edited here.
 const pageContent = {
-  launchStory: '[EDITAR: agrega aquí la historia de los lanzamientos espaciales.]',
+  launchStory: '[Eres un joven curioso que quiere aprender de unas reliquias bastante importantes que aunque permanecen sin vida nos ofrecieron una enorme ayuda para el descubrimiento sobre el espacio a su vez unos amigos que están en nuestro sistema solar llamados planetas que ofrecen muchos datos interesantes con esto deseamos que disfrutes este recorrido a través de todo lo que tenemos para ofrecerte mientras juegas y te diviertes con muchas curiosidades que te harán emocionarte.]',
   launchTrail: [
     { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
     { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
