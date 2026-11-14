@@ -118,10 +118,17 @@ const pageContent = {
     { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
     { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' }
   ],
-  gamesIntro: '[EDITAR: escribe aquí la introducción para los juegos que se agregarán.]',
-  gameModules: [], // Agrega { title, description, link, label } para cada juego de tus compañeros.
-  teamIntro: '[EDITAR: presenta aquí al equipo.]',
-  teamMembers: ['[NOMBRE]', '[NOMBRE]', '[NOMBRE]']
+  gamesIntro: '¡La exploracion tambien es un juego!, descubre las misiones espaciales, supera retos y demmuestra cuanto sabes sobre los artefactos que han dejado huella en nuestro sistema solar.',
+  gameModules: [
+  {
+    title: 'Exploración espacial',
+    description: 'Pon a prueba tus conocimientos sobre las misiones espaciales, descubre datos interesantes y explora los secretos del universo mediante este juego interactivo.',
+    link: 'https://sircum123.github.io/Game-/',
+    label: 'Jugar ahora'
+  }
+],
+  teamIntro: 'EN corvus te quisimos presentar una nueva manera de divertirte y conocer los rastros de nuestro sistema solar.',
+  teamMembers: ['Josue Mojica', 'Valentina Diaz', 'Adrian Alvarez', 'Isaac Zurita']
 };
 
 const destinations = [
