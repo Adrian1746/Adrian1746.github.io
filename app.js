@@ -81,49 +81,112 @@ const missions = [
     officialName: 'Opportunity (Designación oficial de la NASA: MER-B o Mars Exploration Rover - B, gemelo del Spirit).',
     launch: '7 de julio de 2003 (03:18 UTC), Estación de la Fuerza Espacial de Cabo Cañaveral, Florida; cohete Delta II Heavy.',
     end: 'El 10 de junio de 2018 fue el día en que envió su última comunicación a la Tierra. La NASA declaró finalizada la misión el 13 de febrero de 2019.',
-    purpose: 'El objetivo principal de la misión fue buscar y caracterizar una amplia variedad de rocas y suelos en Marte que contuviera pistas sobre la actividad pasada del agua.',
-    endReason: 'Una tormenta global de polvo bloqueó la luz solar en Perseverance Valley. El rover perdió energía y no pudo reanudar la comunicación.',
-    finalPlace: 'Perseverance Valley, borde interior del cráter Endeavour, Meridiani Planum.',
+    purpose: 'Al igual que su hermano Spirit, su objetivo principal era buscar y caracterizar una amplia variedad de rocas y suelos en Marte para buscar pruebas de la actividad pasada del agua líquida.',
+    endReason: 'A mediados de 2018, una intensa tormenta global de polvo en Marte bloqueó por completo la luz solar en la región de Perseverance Valley. Como el Opportunity dependía exclusivamente de energía solar, la falta de luz hizo que entrara en modo de bajo consumo y se quedara sin energía. Se presume que las bajas temperaturas extremas de la noche marciana, combinadas con una capa de polvo que cubrió sus paneles, provocaron fallas críticas internas de las cuales ya no pudo recuperarse, a pesar de que la NASA envió más de mil señales de radio intentando reactivarlo.',
+    finalPlace: 'Se encuentra ubicado en Perseverance Valley, en el borde interior del gigantesco cráter Endeavour (en la región de Meridiani Planum).',
     nasaUrl: 'https://science.nasa.gov/mission/mer-opportunity/',
-    story: '',
-    discoveries: '',
-    image: '',
+    story: ' Le pidieron que trabajara solo tres meses pero el rover Opportunity se quedó explorando Marte durante catorce años enteros este arduo viaje fue con la misión de confirmar si de verdad existió agua dulce por los alrededores y vaya que encontró pruebas en las rocas del planeta rojo, algo bastante tierno es que a veces pasaban remolinos de viento locos que le limpiaban los paneles solares de la nada hasta que en 2018 una tormenta global gigante tapó el sol por completo y lo hizo dormir ganándose el apodo del robot más viajero.',
+    discoveries: 'Encontró pruebas definitivas de la presencia de agua líquida en el pasado mediante afloramientos ricos en sulfatos y minerales hidratados en las colinas Columbia. Además, descubrió depósitos de sílice casi pura (sugiriendo antiguos manantiales termales) y analizó el primer meteorito de hierro en otro planeta.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVweJ-x8ZdTecvq_sDhTyRr-HzC8IunbAqSu-_9AOgdA&s=10',
     color: 'mars'
   },
   {
     id: 'insight', name: 'InSight Lander', world: 'Marte', mark: 'I',
-    officialName: 'InSight (acrónimo de Interior Exploration using Seismic Investigations, Geodesy and Heat Transport; designación del programa: Discovery 12).', launch: '5 de mayo de 2018 (a las 11:05:01 UTC) desde el Complejo de Lanzamiento Espacial 3E (SLC-3E) de la Base de la Fuerza Espacial Vandenberg, en California, a bordo de un cohete Atlas V-401. (Aterrizó en Marte el 26 de noviembre de 2018)', end: '15 de diciembre de 2022 fue el día en que envió su última comunicación a la Tierra. Tras dos intentos fallidos consecutivos de establecer contacto, la NASA declaró oficialmente finalizada la misión el 21 de diciembre de 2022.', purpose: 'A diferencia de los rovers anteriores que estudiaron la superficie y el historial de agua, InSight fue una estación geofísica fija diseñada para tomar los "signos vitales" del interior profundo de Marte y comprender cómo se formaron y evolucionaron los planetas rocosos (como la Tierra). ', endReason: 'Su cese se debió al agotamiento gradual de sus baterías por la acumulación de polvo marciano en sus paneles solares. Durante más de cuatro años en la superficie (más del doble de su misión primaria de dos años), el polvo fino se fue depositando sobre las celdas solares sin que ocurrieran remolinos de viento (dust devils) lo suficientemente fuertes cerca del módulo para limpiarlas. Al final de 2022, la generación de energía cayó a una fracción mínima de su capacidad inicial, provocando que el vehículo entrara en un estado conocido como "dead bus" (sin energía suficiente para mantener los sistemas encendidos ni responder a señales de radio).', finalPlace: 'Se encuentra estacionado en una extensa y plana llanura volcánica llamada Elysium Planitia, justo al norte del ecuador marciano.', nasaUrl: 'https://science.nasa.gov/mission/insight/',
-    story: ' Imagínate ser un doctor espacial y ponerle un estetoscopio gigante al planeta Marte para escuchar sus latidos, eso fue lo que hizo el InSight Lander en 2018 este desplegó un súper oído para detectar cientos de temblores y caídas de meteoritos en el suelo marciano. Es impresionante saber que un temblor allá puede hacer vibrar la superficie durante horas enteras cuando eso en la tierra sería devastador. Al final, el polvo del desierto fue cubriendo poquito a poco sus paneles hasta dejarlo sin energía en Elysium Planitia completando su misión de contarnos qué hay oculto en las entrañas de este mundo.', discoveries: 'Reveló la estructura interna profunda de Marte al medir con precisión el grosor de su corteza, el tamaño y estado líquido de su núcleo y el perfil de su manto. Registró más de 1,300 sismos marcianos e impactos de meteoritos en tiempo real, demostrando que el planeta sigue geológicamente activo.', image: 'https://media.wired.com/photos/5bf5ae1386ef9a0ff73f01a5/3:2/w_2560%2Cc_limit/insightmore_top.jpg', color: 'mars'
+    officialName: 'InSight (acrónimo de Interior Exploration using Seismic Investigations, Geodesy and Heat Transport; designación del programa: Discovery 12).',
+    launch: '5 de mayo de 2018 (a las 11:05:01 UTC) desde el Complejo de Lanzamiento Espacial 3E (SLC-3E) de la Base de la Fuerza Espacial Vandenberg, en California, a bordo de un cohete Atlas V-401. (Aterrizó en Marte el 26 de noviembre de 2018)',
+    end: '15 de diciembre de 2022 fue el día en que envió su última comunicación a la Tierra. Tras dos intentos fallidos consecutivos de establecer contacto, la NASA declaró oficialmente finalizada la misión el 21 de diciembre de 2022.',
+    purpose: 'A diferencia de los rovers anteriores que estudiaron la superficie y el historial de agua, InSight fue una estación geofísica fija diseñada para tomar los "signos vitales" del interior profundo de Marte y comprender cómo se formaron y evolucionaron los planetas rocosos (como la Tierra). ',
+    endReason: 'Su cese se debió al agotamiento gradual de sus baterías por la acumulación de polvo marciano en sus paneles solares. Durante más de cuatro años en la superficie (más del doble de su misión primaria de dos años), el polvo fino se fue depositando sobre las celdas solares sin que ocurrieran remolinos de viento (dust devils) lo suficientemente fuertes cerca del módulo para limpiarlas. Al final de 2022, la generación de energía cayó a una fracción mínima de su capacidad inicial, provocando que el vehículo entrara en un estado conocido como "dead bus" (sin energía suficiente para mantener los sistemas encendidos ni responder a señales de radio).',
+    finalPlace: 'Se encuentra estacionado en una extensa y plana llanura volcánica llamada Elysium Planitia, justo al norte del ecuador marciano.',
+    nasaUrl: 'https://science.nasa.gov/mission/insight/',
+    story: ' Imagínate ser un doctor espacial y ponerle un estetoscopio gigante al planeta Marte para escuchar sus latidos, eso fue lo que hizo el InSight Lander en 2018 este desplegó un súper oído para detectar cientos de temblores y caídas de meteoritos en el suelo marciano. Es impresionante saber que un temblor allá puede hacer vibrar la superficie durante horas enteras cuando eso en la tierra sería devastador. Al final, el polvo del desierto fue cubriendo poquito a poco sus paneles hasta dejarlo sin energía en Elysium Planitia completando su misión de contarnos qué hay oculto en las entrañas de este mundo.',
+    discoveries: 'Reveló la estructura interna profunda de Marte al medir con precisión el grosor de su corteza, el tamaño y estado líquido de su núcleo y el perfil de su manto. Registró más de 1,300 sismos marcianos e impactos de meteoritos en tiempo real, demostrando que el planeta sigue geológicamente activo.',
+    image: 'https://media.wired.com/photos/5bf5ae1386ef9a0ff73f01a5/3:2/w_2560%2Cc_limit/insightmore_top.jpg',
+    color: 'mars'
   },
   {
     id: 'ingenuity', name: 'Ingenuity Helicopter', world: 'Marte', mark: 'H',
-    officialName: '', launch: '', end: '', purpose: '', endReason: '', finalPlace: '', nasaUrl: '',
-    story: '', discoveries: '', image: '', color: 'mars'
+    officialName: 'Ingenuity (también conocido por su apodo Ginny).',
+    launch: '30 de julio de 2020 (a las 11:50 UTC) desde la Estación de la Fuerza Espacial de Cabo Cañaveral en Florida, a bordo de un cohete Atlas V (viajó acoplado en la panza del rover Perseverance y aterrizó en Marte el 18 de febrero de 2021).',
+    end: '25 de enero de 2024 fue el día en que la NASA anunció oficialmente el fin de la misión tras confirmar daños irreparables en sus palas.',
+    purpose: 'Ser una demostración tecnológica experimental para probar por primera vez la viabilidad del vuelo propulsado y controlado en la atmósfera extremadamente tenue de otro planeta (equivalente a apenas el 1% de la densidad de la Tierra). Aunque su diseño original contemplaba realizar únicamente 5 vuelos de prueba en un mes, su enorme éxito hizo que la misión se extendiera durante casi tres años para servir como explorador aéreo adelantado del rover Perseverance.',
+    endReason: 'Durante su 72.º vuelo, el helicóptero sobrevoló un terreno plano y muy uniforme que carecía de elementos visuales distintivos (featureless terrain). Esto confundió el sistema de navegación autónomo del aparato, provocando un aterrizaje brusco. Como resultado del impacto, al menos una de las palas del rotor principal sufrió daños estructurales graves, lo que imposibilitó permanentemente que volviera a generar sustentación y lo dejó incapacitado para volar.',
+    finalPlace: 'Se encuentra inmóvil en un área apodada Valinor Hills, ubicada en el sector de Neretva Vallis, dentro del cráter Jezero en Marte.',
+    nasaUrl: 'https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/',
+    story: ' Imagínate ser un doctor espacial y ponerle un estetoscopio gigante al planeta Marte para escuchar sus latidos, eso fue lo que hizo el InSight Lander en 2018 este desplegó un súper oído para detectar cientos de temblores y caídas de meteoritos en el suelo marciano. Es impresionante saber que un temblor allá puede hacer vibrar la superficie durante horas enteras cuando eso en la tierra sería devastador. Al final, el polvo del desierto fue cubriendo poquito a poco sus paneles hasta dejarlo sin energía en Elysium Planitia completando su misión de contarnos qué hay oculto en las entrañas de este mundo.',
+    discoveries: 'Hizo historia al realizar el primer vuelo propulsado, controlado y autónomo en la atmósfera extremadamente tenue de otro planeta. Validó tecnologías aeronáuticas extremas y abrió la era de la exploración aérea planetaria como explorador visual complementario para los rovers.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcy7dj4vRzmJ-0BbXruCggiQb6TIq2yjWsnAcDFE0ZOA&s=10',
+    color: 'mars'
   },
   {
     id: 'pioneer-venus-2', name: 'Pioneer Venus 2 (Sondas)', world: 'Venus', mark: 'PV',
-    officialName: '', launch: '', end: '', purpose: '', endReason: '', finalPlace: '', nasaUrl: '',
-    story: '', discoveries: '', image: '', color: 'venus'
+    officialName: 'Pioneer Venus Multiprobe (oficialmente Pioneer 13 o Pioneer Venus 2).',
+    launch: '8 de agosto de 1978 (a las 07:33 UTC) desde el Complejo de Lanzamiento 36A en Cabo Cañaveral, Florida, a bordo de un cohete Atlas-Centaur.v',
+    end: '9 de diciembre de 1978, el mismo día en que las cinco piezas ingresaron de forma escalonada a la atmósfera de Venus y transmitieron datos hasta desintegrarse o impactar contra la superficie (las últimas transmisiones cesaron cerca de las 20:55 UTC de ese día).',
+    purpose: 'Estudiar en profundidad la estructura, la composición química, la dinámica y el clima de la compleja atmósfera de Venus desde las capas altas hasta la superficie, complementando la información del orbitador gemelo (Pioneer Venus Orbiter)',
+    endReason: 'Fin de misión programado por diseño. Ninguna de las sondas ni el bus poseía sistemas de paracaídas de aterrizaje a baja altura ni escudos térmicos permanentes para soportar la presión y temperatura de la superficie (excepto la sonda grande que usó un paracaídas parcial en sus capas altas). Entraron a la atmósfera a velocidades hipersónicas y terminaron destruyéndose por la intensa fricción térmica, la presión extrema y el calor antes o justo al momento del impacto.',
+    finalPlace: 'A diferencia de las naves diseñadas para posarse suavemente, sus cuatro sondas atmosféricas impactaron directamente contra la superficie del planeta tras descender durante casi una hora. Por su parte, la nave principal (Bus) se desintegró en la atmósfera superior a unos 110 kilómetros de altitud',
+    nasaUrl: 'https://science.nasa.gov/mission/pioneer-venus-2/',
+    story: '¿Quién dijo que no se puede volar en otro planeta? El Ingenuity Helicopter demostró lo contrario al hacer 72 vuelos históricos sobre el suelo de Marte, su trabajo era ayudar al rover Perseverance a buscar los caminos más seguros desde el aire usando sus propias alas y como el aire marciano es bastante delgado las aspas tenían que girar a una velocidad impresionante para mantenerse arriba. Lamentablemente durante un aterrizaje bastante duro le rompió las hélices en 2024, terminando su gran aventura quedando para siempre en el cráter Jezero.',
+    discoveries: 'Investigó simultáneamente desde cuatro puntos la estructura térmica y la composición química de la densa atmósfera de Venus. Confirmó la existencia de tres capas de nubes de ácido sulfúrico y aportó los datos clave que ayudaron a comprender el extremo efecto invernadero desbocado del planeta.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOtZw-iBmUFcU9rPfzVQaV36LDY2tK_almmZe3FTLM8w&s=10',
+    color: 'venus'
   },
   {
     id: 'magellan', name: 'Magellan', world: 'Venus', mark: 'M',
-    officialName: '', launch: '', end: '', purpose: '', endReason: '', finalPlace: '', nasaUrl: '',
-    story: '', discoveries: '', image: '', color: 'venus'
+    officialName: 'Magellan (también conocida como Venus Radar Mapper).',
+    launch: '4 de mayo de 1989 (a las 18:46:59 UTC) desde el Complejo de Lanzamiento 39B en el Centro Espacial Kennedy, Florida, a bordo del transbordador espacial Atlantis (durante la misión STS-30) y propulsada posteriormente fuera de la órbita terrestre mediante un cohete de etapa superior IUS.',
+    end: '12 de octubre de 1994. Tras completar con éxito su fase principal de mapeo y experimentos científicos adicionales de aerofrenado, la sonda fue guiada intencionalmente a descender y desintegrarse en la atmósfera densa de Venus para recopilar datos finales sobre su densidad y composición.',
+    purpose: 'Ser la primera misión de mapeo por radar de la NASA dedicada a Venus, con el fin de revelar los secretos ocultos bajo la densa y perpetua capa de nubes del planeta.',
+    endReason: 'Fin de misión programado y controlado por la NASA. Hacia el final de su vida operativa, los ingenieros utilizaron el combustible restante para ejecutar un experimento pionero de aerofrenado (aerobraking), sumergiendo deliberadamente la sonda en las capas superiores de la atmósfera venusiana para circularizar su órbita. Una vez agotados los recursos científicos y completados los objetivos, la misión finalizó oficialmente cuando la nave se sumergió y se desintegró en la atmósfera de Venus en octubre de 1994.',
+    finalPlace: 'Se desintegró y fundió en la atmósfera superior de Venus, por lo que sus restos microscópicos se dispersaron en la densa atmósfera y la superficie del planeta. Las coordenadas aproximadas del punto de impacto final de sus fragmentos en la superficie se estiman en la región de Atla Regio',
+    nasaUrl: 'https://science.nasa.gov/mission/magellan/',
+    story: 'Como el planeta Venus tiene unas nubes tan densas que no lo dejan ver por fuera, mandamos a la nave Magellan en 1989 con un súper radar para que dibujara sus mapas. Gracias a eso descubrimos que este vecino infernal está lleno de volcanes gigantes y ríos de lava seca increíbles. Además, este cuerpo celeste tiene su gracia: gira al revés que nosotros y un solo día allá dura más que un año entero. Cuando terminó su trabajo, la mandaron a dar un clavado en la atmósfera para desintegrarse brillando como una estrella fugaz.',
+    discoveries: 'Mapeó mediante radar más del 98% de la superficie de Venus a través de sus nubes impenetrables, revelando un mundo dominado por llanuras volcánicas, estructuras tectónicas únicas llamadas coronas y una renovación global de su superficie por vulcanismo hace cientos de millones de años.',
+    image: 'https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/07/Magellan_deploy.jpg?w=1200&h=1194&fit=crop&crop=faces%2Cfocalpoint',
+    color: 'venus'
   },
   {
     id: 'messenger', name: 'MESSENGER', world: 'Mercurio', mark: 'ME',
-    officialName: '', launch: '', end: '', purpose: '', endReason: '', finalPlace: '', nasaUrl: '',
-    story: '', discoveries: '', image: '', color: 'mercury'
+    officialName: '',
+    launch: '',
+    end: '',
+    purpose: '',
+    endReason: '',
+    finalPlace: '',
+    nasaUrl: '',
+    story: '',
+    discoveries: '',
+    image: '',
+    color: 'mercury'
   },
   {
     id: 'deep-impact', name: 'Deep Impact (Impactor)', world: 'Cometa 9P', mark: 'DI',
-    officialName: '', launch: '', end: '', purpose: '', endReason: '', finalPlace: '', nasaUrl: '',
-    story: '', discoveries: '', image: '', color: 'comet'
+    officialName: '',
+    launch: '',
+    end: '',
+    purpose: '',
+    endReason: '',
+    finalPlace: '',
+    nasaUrl: '',
+    story: '',
+    discoveries: '',
+    image: '',
+    color: 'comet'
   },
   {
     id: 'galileo', name: 'Galileo (Orbiter)', world: 'Júpiter', mark: 'G',
-    officialName: '', launch: '', end: '', purpose: '', endReason: '', finalPlace: '', nasaUrl: '',
-    story: '', discoveries: '', image: '', color: 'jupiter'
+    officialName: '',
+    launch: '',
+    end: '',
+    purpose: '',
+    endReason: '',
+    finalPlace: '',
+    nasaUrl: '',
+    story: '',
+    discoveries: '',
+    image: '',
+    color: 'jupiter'
   }
 ];
 
