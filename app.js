@@ -127,7 +127,7 @@ const pageContent = {
     label: 'Jugar ahora'
   }
 ],
-  teamIntro: 'EN corvus te quisimos presentar una nueva manera de divertirte y conocer los rastros de nuestro sistema solar.',
+  teamIntro: 'En corvus te quisimos presentar una nueva manera de divertirte y conocer los rastros de nuestro sistema solar.',
   teamMembers: ['Josue Mojica', 'Valentina Diaz', 'Adrian Alvarez', 'Isaac Zurita']
 };
 
