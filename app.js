@@ -192,7 +192,7 @@ const missions = [
 
 // Copy and placeholders not found in the database can be edited here.
 const pageContent = {
-  launchStory: '[Eres un joven curioso que quiere aprender de unas reliquias bastante importantes que aunque permanecen sin vida nos ofrecieron una enorme ayuda para el descubrimiento sobre el espacio a su vez unos amigos que están en nuestro sistema solar llamados planetas que ofrecen muchos datos interesantes con esto deseamos que disfrutes este recorrido a través de todo lo que tenemos para ofrecerte mientras juegas y te diviertes con muchas curiosidades que te harán emocionarte.]',
+  launchStory: 'Eres un joven curioso que quiere aprender de unas reliquias bastante importantes que aunque permanecen sin vida nos ofrecieron una enorme ayuda para el descubrimiento sobre el espacio a su vez unos amigos que están en nuestro sistema solar llamados planetas que ofrecen muchos datos interesantes con esto deseamos que disfrutes este recorrido a través de todo lo que tenemos para ofrecerte mientras juegas y te diviertes con muchas curiosidades que te harán emocionarte.',
   launchTrail: [
     { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
     { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
