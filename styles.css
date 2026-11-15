@@ -9,7 +9,7 @@ a{color:inherit;text-decoration:none}
 button{color:inherit}
 .skip-link{position:fixed;top:-60px;left:16px;z-index:100;background:var(--gold);padding:10px 14px;color:var(--night)}
 .skip-link:focus{top:16px}
-:focus-visible{outline:3px solid var(--rose);outline-offset:4px}
+:focus-visible{outline:3px solid var(--coral);outline-offset:4px}
 .scroll-progress{position:fixed;z-index:30;left:0;top:0;width:100%;height:3px;pointer-events:none}
 .scroll-progress span{display:block;height:100%;transform:scaleX(0);transform-origin:left;background:var(--coral);will-change:transform}
 .site-header{height:76px;background:var(--paper);position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 6.2vw;border-bottom:1px solid rgba(32,29,57,.13)}
@@ -481,3 +481,38 @@ h1 em{color:#f0688d}
 .boardgame-info .edit-hint{display:block;margin-top:16px;color:#7d749c}
 @media(max-width:900px){.boardgame{padding-left:7vw;padding-right:7vw}.boardgame-card{padding:28px}}
 @media(max-width:650px){.boardgame{padding:65px 7vw 72px}.boardgame-card{grid-template-columns:1fr;gap:34px;padding:24px 20px 28px;margin-top:34px}.board-art{max-width:270px}.board-button{width:100%;justify-content:space-between}}
+/* ===== Texto más grande ===== */
+p{margin-bottom:0}
+@media(min-width:651px){
+  .main-nav{font-size:14px}
+  .header-link{font-size:12px}
+  .eyebrow{font-size:11px;max-width:480px}
+  .hero-lede{font-size:17px;max-width:430px}
+  .pill-button{font-size:13px;padding:15px 22px}
+  .hero-meta,.hero-bottom{font-size:10px}
+  .orbit-label span{font-size:10px}
+  .orbit-label b{font-size:12px}
+  .mini-label,.edit-hint,.field-empty,.team-list span{font-size:10px}
+  .section-index{font-size:11px}
+  .story-placeholder{font-size:17px;max-width:480px}
+  .archive-intro>p,.games-description,.module-empty p,.game-module p,.boardgame-description,.team-placeholder{font-size:15px}
+  .search-field input{font-size:14px}
+  .destination-tab{font-size:12px}
+  .destination-banner p{font-size:12px}
+  .mission-name{font-size:19px}
+  .mission-world,.record-status{font-size:10px}
+  .module-link,.board-button{font-size:13px}
+  .board-kit li{font-size:11px}
+  .trail-stop b{font-size:15px}
+  .trail-stop p{font-size:12px}
+  .detail-cover p{font-size:13px}
+  .detail-story p,.detail-discoveries p{font-size:14px}
+  .tech-list dt,.tech-list dd{font-size:13px}
+}
+@media(max-width:650px){
+  .eyebrow{font-size:9px}
+  .hero-lede{font-size:15px}
+  .story-placeholder{font-size:14px}
+  .mission-world,.record-status{font-size:8px}
+  .tech-list dt,.tech-list dd{font-size:11px}
+}
