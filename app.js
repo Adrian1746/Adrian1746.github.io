@@ -299,7 +299,7 @@ modules.innerHTML = pageContent.gameModules.length ? pageContent.gameModules.map
 // Sirve el enlace de "Compartir" (https://drive.google.com/file/d/ID/view...).
 // En Drive: clic derecho > Compartir > "Cualquier persona con el enlace" > Copiar enlace.
 const boardGame = {
-  driveLink: '', // <-- PEGA AQUÍ EL ENLACE DE DRIVE
+  driveLink: 'https://drive.google.com/drive/folders/1TDacXMSjlUCOWD-7mw9E-3znonuKOvoA', // <-- PEGA AQUÍ EL ENLACE DE DRIVE
   description: 'Este juego de mesa es un recurso descargable el cual podra ser usado de manera autonoma o tambien como material de estudio para los niños de primaria, de esta manera buscamos que puedas aprender de manera ludica y a su vez entretenida para niños de 7 a 12 años.',
   kit: ['Tablero', 'Fichas', 'Tarjetas', 'Instrucciones'], // Edita o borra lo que no aplique
   buttonLabel: 'Descargar juego'
