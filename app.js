@@ -194,10 +194,7 @@ const missions = [
 const pageContent = {
   launchStory: 'Eres un joven curioso que quiere aprender de unas reliquias bastante importantes que aunque permanecen sin vida nos ofrecieron una enorme ayuda para el descubrimiento sobre el espacio a su vez unos amigos que están en nuestro sistema solar llamados planetas que ofrecen muchos datos interesantes con esto deseamos que disfrutes este recorrido a través de todo lo que tenemos para ofrecerte mientras juegas y te diviertes con muchas curiosidades que te harán emocionarte.',
   launchTrail: [
-    { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
-    { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
-    { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' },
-    { date: '[AÑO]', title: '[MISIÓN]', note: '[Escribe una frase breve.]' }
+    
   ],
   gamesIntro: '¡La exploracion tambien es un juego!, descubre las misiones espaciales, supera retos y demmuestra cuanto sabes sobre los artefactos que han dejado huella en nuestro sistema solar.',
   gameModules: [
@@ -298,6 +295,42 @@ document.querySelector('#teamCopy').textContent = pageContent.teamIntro;
 document.querySelector('#teamList').innerHTML = pageContent.teamMembers.map(person => `<span>${person}</span>`).join('');
 const modules = document.querySelector('#gameModules');
 modules.innerHTML = pageContent.gameModules.length ? pageContent.gameModules.map(game => `<article class="game-module"><span class="module-star">✳</span><span class="mini-label">ACTIVIDAD INTERACTIVA</span><h3>${game.title}</h3><p>${game.description}</p>${game.link ? `<a href="${game.link}" target="_blank" rel="noopener" class="module-link">${game.label || 'Abrir juego'} ↗</a>` : ''}</article>`).join('') : `<article class="module-empty"><div class="empty-orbit" aria-hidden="true"><span>+</span></div><div><span class="mini-label">ESPACIO ABIERTO</span><h3>Tu juego puede vivir aquí.</h3><p>Este apartado está preparado para integrar los juegos del equipo. Agrega título, descripción y enlace en <code>gameModules</code>, dentro de <code>app.js</code>.</p></div><span class="empty-index">01 / ∞</span></article>`;
+// JUEGO DE MESA: pega aquí el enlace de Google Drive del archivo (PDF, ZIP, etc.).
+// Sirve el enlace de "Compartir" (https://drive.google.com/file/d/ID/view...).
+// En Drive: clic derecho > Compartir > "Cualquier persona con el enlace" > Copiar enlace.
+const boardGame = {
+  driveLink: '', // <-- PEGA AQUÍ EL ENLACE DE DRIVE
+  description: 'Este juego de mesa es un recurso descargable el cual podra ser usado de manera autonoma o tambien como material de estudio para los niños de primaria, de esta manera buscamos que puedas aprender de manera ludica y a su vez entretenida para niños de 7 a 12 años.',
+  kit: ['Tablero', 'Fichas', 'Tarjetas', 'Instrucciones'], // Edita o borra lo que no aplique
+  buttonLabel: 'Descargar juego'
+};
+
+function driveLinks(url) {
+  const clean = (url || '').trim();
+  if (!clean) return null;
+  const file = clean.match(/drive\.google\.com\/file\/d\/([\w-]+)/) || clean.match(/[?&]id=([\w-]+)/);
+  if (/\/folders\//.test(clean) || !file) return { download: clean, view: null }; // carpetas u otros enlaces: se abren tal cual
+  return { download: `https://drive.google.com/uc?export=download&id=${file[1]}`, view: `https://drive.google.com/file/d/${file[1]}/view` };
+}
+(function renderBoardGame() {
+  const links = driveLinks(boardGame.driveLink);
+  const download = document.querySelector('#boardDownload');
+  const view = document.querySelector('#boardView');
+  document.querySelector('#boardDescription').textContent = boardGame.description;
+  document.querySelector('#boardKit').innerHTML = boardGame.kit.map(item => `<li>${item}</li>`).join('');
+  if (links) {
+    download.href = links.download;
+    download.firstChild.textContent = boardGame.buttonLabel + ' ';
+    if (links.view) { view.href = links.view; view.hidden = false; }
+  } else {
+    download.setAttribute('aria-disabled', 'true');
+    download.removeAttribute('target');
+    download.classList.add('is-disabled');
+    download.addEventListener('click', event => event.preventDefault());
+    download.innerHTML = 'Enlace por agregar <span>…</span>';
+    document.querySelector('#boardHint').textContent = 'ESPACIO DE CONTENIDO · PEGA EL ENLACE DE DRIVE EN boardGame.driveLink (app.js)';
+  }
+})();
 
 const menuToggle = document.querySelector('#menuToggle');
 const mainNav = document.querySelector('#mainNav');

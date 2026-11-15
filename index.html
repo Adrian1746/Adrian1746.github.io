@@ -47,8 +47,8 @@
     <section class="story section-paper" id="historia">
       <div class="section-index reveal"><span>01</span><span class="index-rule"></span><span>LA HISTORIA DE LOS LANZAMIENTOS</span></div>
       <div class="story-layout">
-        <div class="story-heading reveal"><p class="mini-label">UNA HISTORIA POR CONTAR</p><h2>Todo empieza<br />con una <i>pregunta.</i></h2><div class="scribble" aria-hidden="true">↘</div></div>
-        <div class="story-card reveal"><div class="story-card-mark">✳</div><p class="story-placeholder" id="launchStory">[EDITAR EN app.js: escribe aquí la historia de los lanzamientos espaciales.]</p><span class="edit-hint">ESPACIO DE CONTENIDO · EDITABLE EN app.js</span></div>
+        <div class="story-heading reveal"><p class="mini-label">UNA HISTORIA POR CONTAR</p><h2>Todo empieza<br />con una <i>pregunta.</i></h2><div class="scribble" aria-hidden="true">★</div></div>
+        <div class="story-card reveal"><div class="story-card-mark">✳</div><p class="story-placeholder" id="launchStory">[EDITAR EN app.js: escribe aquí la historia de los lanzamientos espaciales.]</p></div>
       </div>
       <div class="story-trail reveal" aria-label="Línea de tiempo editable" id="storyTrail"></div>
     </section>
@@ -59,7 +59,7 @@
       <div class="destination-tabs reveal" id="destinationTabs" role="group" aria-label="Filtrar por destino"></div>
       <div class="destination-banner reveal" id="destinationBanner"></div>
       <div class="mission-grid" id="missionGrid" aria-live="polite"></div>
-      <p class="archive-note"><span>✳</span> Los campos vacíos se pueden completar editando <code>missions</code> en <code>app.js</code>.</p>
+      
     </section>
 
     <section class="games section-paper" id="juegos">
@@ -69,6 +69,29 @@
       <!-- Para integrar juegos de otros compañeros, agrega objetos a gameModules en app.js.
            Cada objeto puede mostrar una descripción y un enlace de integración (por ejemplo, Genially). -->
     </section>
+     <section class="boardgame" id="mesa" aria-labelledby="boardTitle">
+      <div class="section-index reveal"><span>04</span><span class="index-rule"></span><span>JUEGO DE MESA</span></div>
+      <div class="boardgame-card reveal">
+        <div class="board-art" aria-hidden="true">
+          <div class="board-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="board-dice"><span>⚀</span></div>
+          <span class="board-planet planet-a"></span><span class="board-planet planet-b"></span>
+          <span class="board-spark">✦</span>
+        </div>
+        <div class="boardgame-info">
+          <p class="mini-label">PARA JUGAR EN FAMILIA</p>
+          <h2 id="boardTitle">Lleva el espacio<br />a tu <i>mesa.</i></h2>
+          <p class="boardgame-description" id="boardDescription">[EDITAR EN app.js: describe el juego de mesa.]</p>
+          <ul class="board-kit" id="boardKit" aria-label="Qué incluye"></ul>
+          <div class="boardgame-actions">
+            <a class="board-button" id="boardDownload" href="#mesa" target="_blank" rel="noopener">Descargar juego <span>↓</span></a>
+            <a class="board-button board-button-ghost" id="boardView" href="#mesa" target="_blank" rel="noopener" hidden>Ver en Drive ↗</a>
+          </div>
+          <p class="edit-hint" id="boardHint"></p>
+        </div>
+      </div>
+    </section>
+
 
     <section class="team-section">
       <div class="team-orbit" aria-hidden="true"><span>✳</span><i></i></div>

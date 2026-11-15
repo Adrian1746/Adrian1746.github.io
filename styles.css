@@ -444,3 +444,40 @@ h1 em{color:#f0688d}
 .tech-list dd{color:var(--ink)}
 .field-empty{color:#d9821a}
 .source-link{color:#d9585f}
+/* ===== Juego de mesa (descarga desde Drive) ===== */
+.boardgame{background:#d3f1e4;color:var(--ink);padding:84px 10vw 96px;position:relative;overflow:hidden}
+.boardgame:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 90% 10%,#ffffff88,transparent 35%),radial-gradient(ellipse at 5% 95%,#fcd5e388,transparent 38%)}
+.boardgame>*{position:relative}
+.boardgame .section-index{color:#4f7a6b}
+.boardgame .section-index>span:first-child{color:#e8708c}
+.boardgame .section-index .index-rule{background:#9ccdb9}
+.boardgame-card{margin-top:46px;display:grid;grid-template-columns:.9fr 1.1fr;gap:5vw;align-items:center;background:#fffaf0;border:2px solid #fff;border-radius:18px 34px 18px 34px;padding:38px;box-shadow:0 8px 0 #a9ddc7}
+.board-art{position:relative;aspect-ratio:1;max-width:380px;width:100%;margin:0 auto;background:#ffe3ef;border-radius:26px;padding:22px;transform:rotate(-3deg);box-shadow:0 6px 0 #f5bfd3;transition:transform .4s var(--ease)}
+.boardgame-card:hover .board-art{transform:rotate(0)}
+.board-grid{height:100%;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);gap:12px;align-content:center}
+.board-grid i{border-radius:50%;aspect-ratio:1;background:#ffd98a;box-shadow:inset -4px -4px 0 #0000001a}
+.board-grid i:nth-child(3n){background:#cdbff7}.board-grid i:nth-child(3n+1){background:#b6ebd8}.board-grid i:nth-child(5n){background:#a9d6f5}.board-grid i:nth-child(7n){background:#ffa9ac}
+.board-dice{position:absolute;right:-16px;bottom:-18px;width:78px;height:78px;border-radius:18px;background:#fff;display:grid;place-items:center;font-size:54px;line-height:1;color:#e8708c;box-shadow:0 5px 0 #e3d6c4;transform:rotate(14deg);animation:moonFloat 5s ease-in-out infinite}
+.board-planet{position:absolute;border-radius:50%}
+.board-planet.planet-a{width:56px;height:56px;left:-18px;top:-16px;background:#cdbff7;box-shadow:inset -8px -6px 0 #0000001a;animation:moonFloat 6s ease-in-out infinite}
+.board-planet.planet-b{width:30px;height:30px;right:12px;top:-12px;background:#ffd98a;box-shadow:inset -5px -4px 0 #0000001a;animation:moonFloat 7s ease-in-out infinite reverse}
+.board-spark{position:absolute;left:10px;bottom:-14px;font-size:28px;color:#f2a93b;animation:twinkle 3s ease-in-out infinite}
+.boardgame-info .mini-label{color:#4f7a6b}
+.boardgame-info h2{font:600 clamp(40px,5vw,62px)/.98 var(--display);letter-spacing:-.07em;margin:14px 0 16px}
+.boardgame-info h2 i{font-style:normal;color:#e8708c}
+.boardgame-description{font-size:13px;line-height:1.8;color:#6d6393;max-width:430px}
+.board-kit{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:18px 0 24px}
+.board-kit li{font:9px var(--mono);letter-spacing:.06em;padding:7px 12px;border-radius:99px;background:#d3f1e4;color:#3f6b5c}
+.board-kit li:nth-child(2n){background:#e8dffb;color:#5a4a96}.board-kit li:nth-child(3n){background:#ffe3ef;color:#a2456a}
+.boardgame-actions{display:flex;flex-wrap:wrap;gap:12px}
+.board-button{display:inline-flex;align-items:center;gap:22px;background:#ffd98a;color:var(--ink);padding:14px 20px;border-radius:99px;font-weight:700;font-size:11px;box-shadow:0 5px 0 #f2bd5c;transition:transform .25s var(--ease),box-shadow .25s}
+.board-button span{font-size:17px}
+.board-button:hover{transform:translateY(-3px) rotate(-1deg);box-shadow:0 8px 0 #f2bd5c}
+.board-button:active{transform:translateY(2px);box-shadow:0 2px 0 #f2bd5c}
+.board-button-ghost{background:transparent;border:2px solid #a9ddc7;box-shadow:none;gap:8px}
+.board-button-ghost:hover{background:#d3f1e4;box-shadow:none}
+.board-button.is-disabled{background:#eee6d6;color:#8f86b3;box-shadow:0 5px 0 #ddd2bd;cursor:not-allowed}
+.board-button.is-disabled:hover{transform:none;box-shadow:0 5px 0 #ddd2bd}
+.boardgame-info .edit-hint{display:block;margin-top:16px;color:#7d749c}
+@media(max-width:900px){.boardgame{padding-left:7vw;padding-right:7vw}.boardgame-card{padding:28px}}
+@media(max-width:650px){.boardgame{padding:65px 7vw 72px}.boardgame-card{grid-template-columns:1fr;gap:34px;padding:24px 20px 28px;margin-top:34px}.board-art{max-width:270px}.board-button{width:100%;justify-content:space-between}}
